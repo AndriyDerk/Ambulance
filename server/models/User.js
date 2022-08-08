@@ -1,9 +1,9 @@
 const db = require('../ext/db')
 
-const schame = new db.schame({
-    fitstName: {
+const schema = new db.Schema({
+    firstName: {
         type: String,
-        required: true,
+        required: true,// TODO: стерти наступне: вказує, що поле обов'язкове
         maxlength: 255,
         minlength: 2,
         trim: true// TODO: стерти наступне: забирає пробіли в кінці і на початку
@@ -48,7 +48,13 @@ const schame = new db.schame({
     },
     registrationDate: { 
         type: Date, 
-        default: Date.now }
-})
+        default: Date.now
+    },
+    role: {
+        type: String,
+        default: "USER"
+    }
+        
+});
 
-module.exports = db.model('User', schame)
+module.exports = db.model('User', schema)

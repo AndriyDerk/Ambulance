@@ -1,6 +1,6 @@
 const db = require('../ext/db')
 
-const schame = new db.schame({
+const schema = new db.Schema({
     name:{
         type: String,
         required: true,
@@ -20,3 +20,5 @@ const schame = new db.schame({
         minlength: 2
     }
 })
+
+module.exports = db.model('Illness', schema)

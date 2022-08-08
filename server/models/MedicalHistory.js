@@ -1,31 +1,30 @@
 const db = require('../ext/db')
 
-const schame = new db.schame({
+const schema = new db.Schema({
     userId: {
-        type: String,
+        type: ObjectId,
         required: true
     },
     ilnessId: {
-        type: String,
+        type: ObjectId,
         required: true
     },
     begin: {
         type: Date,
-        required: true
+        required: true,
+        default: Date.now
     },
     end: {
         type: Date,
-        required: true
     },
     symptoms: {
-        type: String,
-        required: true,
-        maxlength: 1000,
+        type: [String],
+        required: true
     },
     doctorId: {
-        type: String,
+        type: ObjectId,
         required: true
     }
 })
 
-module.exports = db.model('MedicakHistory', schame)
+module.exports = db.model('MedicakHistory', schema)

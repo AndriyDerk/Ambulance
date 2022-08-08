@@ -1,7 +1,7 @@
 const db = require('../ext/db')
 
-const schame = new db.schame({
-    fitstName: {
+const schema = new db.Schema({
+    firstName: {
         type: String,
         required: true,// TODO: стерти наступне: вказує, що поле обов'язкове
         maxlength: 255,
@@ -48,7 +48,7 @@ const schame = new db.schame({
     },
     education: [{
         end: {
-            type: Date,
+            type: String,// TODO: переробити на тип дати
             required: true
         },
         universityName: {
@@ -65,14 +65,22 @@ const schame = new db.schame({
         }
     }],
     experience: {
-        type: String,
+        type: [Object],
         default: ''
     },
     ilnessId: {
-        type: [ObjectId],
+      //  type: [ObjectId], TODO: object???
+        type: [Number],
         required: true
     },
     registrationDate: {     
         type: Date, 
-        default: Date.now }
+        default: Date.now
+    },
+    role: {
+        type: String,
+        default: "DOCTOR"
+    }
 })
+
+module.exports = db.model('Doctor', schema)
