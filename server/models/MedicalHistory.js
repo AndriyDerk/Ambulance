@@ -5,7 +5,7 @@ const schema = new db.Schema({
         type: ObjectId,
         required: true
     },
-    ilnessId: {
+    illnessId: {
         type: ObjectId,
         required: true
     },
@@ -27,4 +27,4 @@ const schema = new db.Schema({
     }
 })
 
-module.exports = db.model('MedicakHistory', schema)
+module.exports = db.model('MedicalHistory', schema)

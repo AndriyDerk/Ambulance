@@ -8,7 +8,7 @@ const schema = new db.Schema({
         minlength: 2
     },
     symptoms: {
-        type: String,
+        type: [String],
         required: true,
         maxlength: 1000,
         minlength: 2

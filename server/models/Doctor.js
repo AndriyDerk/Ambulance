@@ -68,7 +68,7 @@ const schema = new db.Schema({
         type: [Object],
         default: ''
     },
-    ilnessId: {
+    illnessId: {
       //  type: [ObjectId], TODO: object???
         type: [Number],
         required: true

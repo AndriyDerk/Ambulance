@@ -13,7 +13,7 @@ const generateJWT = (id, email, role) =>{
 
 class doctorConroller{
     async registration(req, res, next){
-        const {firstName, secondName, email, password, dateBirthday, sex, phoneNumber, education, experience, ilnessId, role} = req.body//TODO : додати перевірку всіх параметрів   
+        const {firstName, secondName, email, password, dateBirthday, sex, phoneNumber, education, experience, illnessId, role} = req.body//TODO : додати перевірку всіх параметрів
         if(!email || !password){
             //TODO : add error
             console.log('1')
@@ -37,7 +37,7 @@ class doctorConroller{
             phoneNumber: phoneNumber,
             education: education,
             experience: experience,
-            ilnessId: ilnessId,
+            illnessId: illnessId,
             role: role
         })
 
