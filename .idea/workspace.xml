@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4325f07d-6b02-4871-ab00-4f3009ac2d42" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/controllers/illnessController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/error/apiError.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/middleware/authMiddleware.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/middleware/errorHandlingMiddleware.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/doctorController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/doctorController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/illnessConroller.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/medicalHistoryConroller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/medicalHistoryController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/userController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/Doctor.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/Doctor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/Illness.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/Illness.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/MedicalHistory.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/MedicalHistory.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/router/illnessRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/router/illnessRouter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/router/medicalHistoryRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/router/medicalHistoryRouter.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +50,7 @@
       <workItem from="1658479730594" duration="612000" />
       <workItem from="1658672779770" duration="1642000" />
       <workItem from="1660047737662" duration="2669000" />
+      <workItem from="1660149645430" duration="4201000" />
     </task>
     <servers />
   </component>
